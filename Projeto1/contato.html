@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="palavras-chave, exemplo, exemplo">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+       <div class="container">
+        <div class="logo"><a href="index.html"></a>
+            <h2>Danki.Code</h2>
+        </div><!--logo-->
+        <nav class="menu-desktop">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li class="selected">
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav><!--menu-desktop--> 
+        <nav class="menu-mobile">
+            <h2><i class="icon-reorder"></i></h2>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li  class="selected">
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav><!--menu-mobile-->
+        <div class="clear"></div><!--clear-->
+       </div><!--container-->
+    </header>
+        
+    <section class="title-page">
+        <div class="overlay__title-page"></div>
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas soluta nostrum doloribus voluptatem tempora quia, quas error molestiae facere, perspiciatis accusamus architecto minima necessitatibus nesciunt, assumenda quasi accusantium? Possimus, perferendis!</p>
+        </div><!--container-->
+    </section><!--title-page-->
+
+    <section class="contato">
+        <div class="container">
+            <div class="w60 formulario">
+                <h2>Entre em contato e vamos responder o mais breve possível. </h2>
+                <form action="" method="post">
+                    <div class="w50">
+                        <input type="text" placeholder="Nome" required>
+                    </div><!--w50-->
+                    <div class="w50">
+                        <input type="text" placeholder="Sobrenome" required>
+                    </div><!--w50-->
+                    <div class="w100">
+                        <input type="email" placeholder="E-mail" required>
+                    </div><!--w100-->
+                    <div class="w100">
+                        <textarea placeholder="Digite sua mensagem" name="" id="" cols="30" rows="10"></textarea>
+                    </div><!--w100-->
+                </form>
+            </div><!--w60 formulario-->
+            <div class="w40 tags-form">
+                <h2><i class="icon-comments"></i>Fale com a nossa equipe!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam explicabo officia reiciendis iste mollitia quia aliquam, voluptatem porro eos. Quidem iure, laborum fuga eius excepturi a eveniet amet in optio.</p>
+                <p class="tag-contato"><i class="icon-facebook"></i> Danki.Code</p><!--tag-contato-->
+                <p class="tag-contato"><i class="icon-facebook"></i> Danki.Code</p><!--tag-contato-->
+                <p class="tag-contato"><i class="icon-facebook"></i> Danki.Code</p><!--tag-contato-->
+            </div><!--w40 tags-form-->
+            <div class="clear"></div>
+        </div><!--container-->
+    </section><!--contato-->
+      
+    <footer class="footer1">
+        <div class="container">
+            <div class="w33">
+                <h2>Aonde estamos</h2>
+                <p><i class="icon-map-marker"></i> Rua Fulano, 123 - Rio de Janiero - RJ</p>
+                <p><i class="icon-phone"></i> (21)97587-8666</p>
+            </div><!--w33-->
+            <div class="w33">
+                <h2>Links úteis</h2>
+                <a href="">Danki.Code</a>
+                <a href="">Danki.Code</a>
+            </div><!--w33-->
+            <div class="w33">
+                <h2>Conecte-se Conosco</h2>
+                <div class="group-icons">
+                    <a href=""><i class="icon-facebook"></i></a>
+                    <a href=""><i class="icon-instagram"></i></a>
+                </div><!--group-icons-->
+            </div><!--w33-->
+            <div class="clear"></div><!--clear-->
+        </div><!--container-->
+      
+    </footer><!--footer1-->
+    <footer class="footer2">
+        <div class="container">
+            <p>Todos os direitos reservados</p>
+        </div><!--container-->
+    </footer><!--footer2-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('nav.menu-mobile h2').click(function(){
+            $('nav.menu-mobile ul').slideToggle();
+        });
+    </script>
+</body>
+</html>
