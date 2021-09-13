@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>Menu | UI/UX</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo-desktop">
+            <a href="index.html"><i class="icon-apple"></i></a>
+        </div><!--logo-desktop-->
+        <nav class="desktop">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav><!--desktop-->
+
+        <nav class="mobile">
+            <div class="logo-mobile">
+                <a href="index.html"><i class="icon-apple"></i></a>
+            </div><!--logo-mobile-->
+            <h3><i class="icon-reorder"></i></h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav><!--mobile-->
+        <div class="clear"></div>
+    </div><!--container-->
+</header>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function(){
+        $('nav.mobile h3').click(function(){
+        $('nav.mobile ul').slideToggle();
+    })
+    })
+</script>
+</body>
+</html>

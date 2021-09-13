@@ -1,0 +1,36 @@
+UI - User interface
+Interface do usuário
+É o meio pelo qual o usuário interage como o meio (aplicativo, site, sistema, etc.)
+toda a parte visual
+a interalçao ocorre através dos elementos da interface: botôes, textos, imagens, links. 
+
+O QUE SÃO ESTILOS DE UI
+Padrões predefinidos para criação de interfaces
+
+FLAT DESIGN
+é muito comum johe na web
+caracterizado por utilizar cores e formas chapadas
+estilo minimalista
+
+PROFISSIONAL DE UI
+responsável por crir toda a interface
+além do layout projeta toda a interação com o usuário
+se preocupa com a  arquitetura da informação
+Tem como foco a construção da interface, os elementos interativos, feedback, etc
+
+UX user experience
+experiência do usuário
+é a ára onde estuda o lado emocional em relação a interface
+como o mesmo se sente ao utiliza-lo
+
+PROFISSIONAL DE UX
+se preocupa e tem como foco proporcionar a melhor experiência possível daquele usuário diante da interface
+
+CONVENÇÕES PARA CRIAÇÃO DE UI
+São padrões utilizados para a criação de interfaces pela maioria dos sites
+como por exemplo, menu, rodapé, textos, alinhamentos, ícones, etc
+
+
+
+
+

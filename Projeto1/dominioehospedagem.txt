@@ -1,0 +1,14 @@
+Domínio: como acessar
+Hopsedagem: onde ficam os arquivos
+
+nameserver: 10 dominios apontando para a mesma página
+
+filezzila para gerenciar os arquivos
+
+integrar google analytics
+adm/config nova conta/inserir endereço
+colocar o script no read
+instalar tag de acompanhamento
+
+sitemap otimiza
+sitemapgenerator
