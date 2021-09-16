@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>Formulários e feedback para o usuário</title>
+</head>
+<body>
+    <section class="formulario" action="">
+        <div class="container">
+            <form action="">
+                <div class="form-group">
+                    <span></span>
+                    <input type="text" name="nome" placeholder="Nome">
+                </div><!--form-group-->
+                <div class="form-group">
+                    <span></span>
+                    <input type="text" name="email" placeholder="E-mail">
+                </div><!--form-group-->
+                <div class="form-group">
+                    <span></span>
+                    <textarea placeholder="Sua mensagem" name="mensagem" id="" cols="30" rows="10"></textarea>
+                </div><!--form-group-->
+                <div class="form-group">
+                    <span></span>
+                    <input type="submit" value="Enviar!">
+                </div><!--form-group-->
+            </form>
+            <div class="box-sucesso">Sua mensagem foi enviada com sucesso!</div>
+        </div><!--container-->
+    </section>
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function(){
+            $('form').submit(function(){
+                var erro = false;
+                var nome = $('[name=nome]').val();
+                var email = $('[name=email]').val();
+                var mensagem = $('[name=mensagem]').val();
+                resetForm();
+                if(nome == ''){
+                    erro = true;
+                    var el = $('[name=nome]');
+                    el.parent().find('span').html('Por favor insira seu nome.');
+                    el.css('border','2px solid red')
+                }
+                if(email == ''){
+                    erro = true;
+                    var el = $('[name=email]');
+                    el.parent().find('span').html('Por favor insira seu e-mail.');
+                    el.css('border','2px solid red')
+                }
+                if(mensagem == ''){
+                    erro = true;
+                    var el = $('[name=mensagem]');
+                    el.parent().find('span').html('Por favor insira sua mensagem.');
+                    el.css('border','2px solid red')
+                }
+                if(erro == false){
+                    $('.box-sucesso').fadeIn(function(){
+                        setTimeout(function(){
+                            $('.box-sucesso').fadeOut();
+                        },5000);
+                    });
+                    $(this)[0].reset();
+                }
+                return false;
+            })
+
+            function resetForm(){
+                $('input[type=text],textarea').css('border','1px solid #ccc');
+                $('span').html('');
+            }
+        })
+    </script>
+</body>
+</html>
