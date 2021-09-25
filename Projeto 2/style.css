@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center{
+    max-width: 1100;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{clear: both;}
