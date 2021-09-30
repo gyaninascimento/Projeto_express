@@ -152,11 +152,26 @@ section.novidades{
     color: rgb(110, 110, 110);
 }
 
+footer{
+    padding: 20px 0;
+    background: #3c2e58;
+    color: white;
+}
+
+.text-right{
+    text-align: right;
+}
+
 @media screen and (max-width: 768px) {
     .loja-wraper{
         width: 100%;
         padding: 20px;
         max-width: 500px;
         margin: 30px auto;
+    }
+
+    .w50{
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
