@@ -6,7 +6,7 @@
 }
 
 .center{
-    max-width: 1100;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 2%;
 }
@@ -97,4 +97,23 @@ section.loja > .center{
     padding: 8px;
     font-size: 15px;
     color: rgb(10, 10, 10);
+}
+
+.loja-wraper a{
+    color: white;
+    background: #5fb382;
+    padding: 10px 8px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .loja-wraper{
+        width: 100%;
+        padding: 20px;
+        max-width: 500px;
+        margin: 30px auto;
+    }
 }
