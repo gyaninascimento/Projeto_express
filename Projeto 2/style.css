@@ -22,27 +22,36 @@ header > .center {
     display: flex;
 }
 
-.logo{
+.logo-desktop{
     width: 50%;
     color: white;
     font-size: 21px;
 }
 
-.menu{
+.menu-desktop{
     width: 50%;
     text-align: right;
 }
 
-.menu ul{list-style-type: none;}
-.menu li{
+.menu-desktop ul{list-style-type: none;}
+.menu-desktop li{
     margin-right: 10px;
     font-size: 15px;
     display: inline-block;
 }
 
-.menu a{
+.menu-desktop a{
     color: white;
 }
+
+.menu-mobile, .logo-mobile{
+    display: none;
+}
+
+menu.desktop{
+    float: right;
+}
+
 
 section.texto-chamada{
     background: #4c3282;
@@ -173,5 +182,55 @@ footer{
     .w50{
         width: 100%;
         margin-bottom: 30px;
+    }
+
+    .logo-desktop,
+    .menu-desktop{
+        display: none;
+    }
+
+    header{
+        padding: 20px 0;
+    }
+
+    .logo-mobile a{
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .menu-mobile{
+        text-align: center;
+        display: block;
+        width: 100%;
+        /*text-transform: uppercase;*/
+    }
+
+    .menu-mobile h3{
+        position: absolute;
+        left:10px;
+        top: 10px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .menu-mobile ul{
+        display: none;
+        background: #3c2e58;
+        position: absolute;
+        left: -2%;
+        top: 29px;
+        width: 104%;
+        text-align: center;
+    }
+
+    .menu-mobile li{
+        padding: 8px 0;
+        border-top: 1px solid white;
+    }
+
+    .menu-mobile a{
+        color: white;
+        text-decoration: none;
     }
 }

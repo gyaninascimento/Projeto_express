@@ -12,16 +12,29 @@
 <body>
     <header>
         <div class="center">
-            <div class="logo">Lorem.Ipsum </div><!--logo-->
-            <div class="menu">
+            <div class="logo-desktop">Lorem.Ipsum </div><!--logo-->
+            <div class="menu-desktop">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </div><!--menu-->
+
+            <div class="menu-mobile">
+            <div class="logo-mobile">Lorem.Ipsum </div><!--logo-->
+                <h3><i class="fas fa-bars"></i></h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div><!--menu-->
+
+            <div class="clear"></div>
         </div><!--center-->
     </header>
+
     <section class="texto-chamada">
         <div class="center">
             <i class="fas fa-book"></i>
@@ -140,5 +153,14 @@
             <div class="clear"></div>
         </div><!--center-->
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function(){
+        $('.menu-mobile h3').click(function(){
+        $('.menu-mobile ul').slideToggle();
+    })
+    })
+</script>
 </body>
 </html>
